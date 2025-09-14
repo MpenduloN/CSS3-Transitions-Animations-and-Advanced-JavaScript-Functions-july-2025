@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper Doll Wardrobe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>👗 Paper Doll Wardrobe 👒</h1>
+
+  <div class="container">
+    <div class="doll-area">
+      <div id="doll"></div>
+      <div id="clothes-layer"></div>
+    </div>
+
+    <div class="wardrobe">
+      <h2>Wardrobe</h2>
+      <button onclick="addClothing('Dress', 25)">Dress - R25</button>
+      <button onclick="addClothing('Hat', 10)">Hat - R10</button>
+      <button onclick="addClothing('Shoes', 15)">Shoes - R15</button>
+      <button onclick="addClothing('Bag', 20)">Bag - R20</button>
+    </div>
+
+    <div class="basket">
+      <h2>Basket</h2>
+      <ul id="basket-list"></ul>
+      <p>Total: R<span id="total">0</span></p>
+      <button onclick="clearAll()">Clear All</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

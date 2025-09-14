@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f8f9fa;
+  margin: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+/* Doll Area */
+.doll-area {
+  position: relative;
+  width: 150px;
+  height: 300px;
+  background: #ffe0bd;
+  border: 2px solid #333;
+  border-radius: 15px;
+}
+
+#clothes-layer div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Clothes Colors */
+.dress { background: pink; }
+.hat { background: lightblue; height: 50px; top: 0; border-radius: 50%; }
+.shoes { background: brown; height: 40px; bottom: 0; }
+.bag { background: gold; width: 60px; height: 60px; bottom: 80px; right: 10px; border-radius: 8px; }
+
+/* Wardrobe and Basket */
+.wardrobe, .basket {
+  width: 200px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 12px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2ecc71;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+/* Doll body */
+#doll {
+  width: 100%;
+  height: 100%;
+  background: #ffe0bd; /* skin color */
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Clothes overlay */
+#clothes-layer div {
+  position: absolute;
+  opacity: 0.9;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Each clothing piece with visible size */
+.dress {
+  background: pink;
+  width: 100%;
+  height: 70%;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.hat {
+  background: lightblue;
+  width: 60%;
+  height: 20%;
+  top: -10px;
+  left: 20%;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.shoes {
+  background: brown;
+  width: 80%;
+  height: 15%;
+  bottom: -5px;
+  left: 10%;
+  z-index: 2;
+}
+
+.bag {
+  background: gold;
+  width: 40%;
+  height: 30%;
+  bottom: 25%;
+  right: -10px;
+  border-radius: 8px;
+  z-index: 4;
+}
+/* Wardrobe and Basket */
